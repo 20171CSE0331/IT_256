@@ -3,6 +3,10 @@
 	<title>div tag example</title>
 
 	<style>
+	div{	margin:5px;
+		border:2px dashed green;
+	
+	}
 	#menu{
 		color:red;
 		border:2px solid blue;
@@ -10,6 +14,8 @@
 
 
 	#content{
+		
+		clear:none;
 		color: white;
 		background-color: black;
 		border: 2px solid yellow;
@@ -31,6 +37,42 @@
 		color:yellow;
 		text-shadow: 4px 0px 5px white;
 		}
+	img{
+		width:250px;
+		height:220px;
+	}
+	.Articles div{
+		 padding:5px;
+		text-align:center;
+		
+		}
+	div.dotted{
+		border-style:dotted;
+		}
+	div.dashed{
+		border-style:dashed;
+		}
+	div.groove{
+		border-style:groove;
+		}
+	div.ridge{
+		border-style:ridge;
+		}
+	par.inset{
+		border-style:inset;
+		}
+	par.outset{
+		border-style:ouset;
+		}
+	par.none{
+		border-style:none;
+		}
+	par.mix{
+		border-style:dotted dashed solid double;
+		}
+	par.solid{
+		border-style:solid;
+		}
 	</style>
 </head>
 
@@ -41,19 +83,19 @@
 	<a href = '/home/6CSE5/20171CSE0331/HTML_files/my_resume.html'>My Resume</a>
 	</div>
 	
+	<div class='Articles'>
+		<div>
+			<div id='content' align = 'middle'>
+				<h2>Article no:101</h2>
+				<p>Some logical content should be filled here</p>
+			</div>		
 
-	<div>
-		<div id='content' align = 'middle'>
-			<h2>Article no:101</h2>
-			<p>Some logical content should be filled here</p>
-		</div>		
-
-		<div id='content2' align = 'middle'>
-			<h2>Article no:102</h2>
-			<p><span style = 'color:cyan;'>Some logical content should be filled here</span></p>
+			<div id='content2' align = 'middle'>
+				<h2>Article no:102</h2>
+				<p><span style = 'color:cyan;'>Some logical content should be filled here</span></p>
+			</div>
 		</div>
 	</div>
-
 
 	<div id='text-styles'   >
 	<p style='direction:rtl;'>Text Direction [rtl]</p>
@@ -63,11 +105,65 @@
 	</div>
 	
 	<div align='middle' style='color:magenta'>
-		<h3 style='text-decoration:blink;'> Decorating the text [blink]</h3>
+		<mark><h3 style='text-decoration:blink;'>Decorating the text [blink]</h3></mark>
 		<p style='text-decoration:underline;'>Random words typed [underline]</p>
 		<p style='text-decoration:line-through;'>Random words typed [line-through]</p>
 		<p style='text-decoration:overline;'>Random words typed [overline]</p>
 	</div>
 	
+	<div align='middle' style='color:cyan;'>
+		<mark><h3 style='text-decoration:blink;'>TEXT CASES</h3></mark>
+		<p style='text-transform:capitalize'>captilize	</p>
+		<p style='text-transform:uppercase'>upper-case	</p>
+		<p style='text-transform:lowercase'>LOWER-CASE	</p>
+	</div>
+	
+	<div>
+	<img src='/home/6CSE5/20171CSE0331/HTML_files/images/blueOrange.jpeg' alt="blue-orange" style='border:5px dashed orange;'>Image border</img>
+	</div>
+
+<div>
+	<img src='/home/6CSE5/20171CSE0331/HTML_files/images/blueOrange.jpeg' alt="blue-orange" style='border:5px dashed orange; 
+			opacity:.2555555;'>Image Opacity</img>
+	</div>
+	
+
+	<div >
+		<h2 color="blue" align='center'> Border Styles</h2>
+		<div class='dotted'>
+			<p >Dotted</p>
+		</div>
+		<div class='dashed'>
+			<p >dashed</p>
+		</div>
+		<div class='double'>
+			<p >double</p>
+		</div>
+		<div class='groove'>
+			<p>groove</p>
+		</div>
+		<div class='ridge'>
+			<p>ridge</p>
+		</div>
+		<div class='inset'>
+			<p >inset</p>
+		</div>
+		<div class='outset'>
+			<p>outset</p>
+		</div>
+		<div class='none'>
+			<p>none</p>
+		</div>
+		<div class='hidden'>
+			<p>hidden</p>
+		</div>
+		<div class='mix'>
+			<p >mix</p>
+		</div>
+		<div class='solid'>
+			<p>solid</p>
+		</div>
+		
+	</div>
 </body>
 </html>
