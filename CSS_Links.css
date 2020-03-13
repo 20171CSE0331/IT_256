@@ -1,0 +1,29 @@
+body{padding:40px;
+	}
+
+a.two{
+	color:green;
+	text-decoration:none;
+	}
+
+a.three{
+	color:black;
+	text-decoration:none;
+	border:2px solid green;
+	padding: 10px;}
+
+a.four{
+	color:white;
+	background-color:red;
+	text-decoration:none;
+	border:2px;
+	padding: 10px;}
+a:link{
+	background-color:red;}
+a:visited{
+	background-color:green;}
+a:hover{
+	background-color: pink;}
+a:active{
+	background-color:blue;}
+
